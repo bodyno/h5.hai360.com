@@ -4,6 +4,3 @@ bower_components
 .idea
 .sass-cache
 npm-debug.log
-dist
-dist.zip
-upfile

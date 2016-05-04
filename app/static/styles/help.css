@@ -29,19 +29,19 @@ ul, li {
 
 i {
   position: absolute;
-  right: 15px;
-  top: 11px;
+  right: 0px;
+  top: 0px;
   background: url("/static/images/help/arrow.png") no-repeat center;
   background-size: 50% 50%;
-  width: 10px;
-  height: 18px; }
+  width: 40px;
+  height: 40px; }
   i.active {
-    right: 11px;
-    top: 16px;
+    right: 0px;
+    top: 0px;
     background: url("/static/images/help/arrow_down.png") no-repeat center;
     background-size: 50% 50%;
-    width: 18px;
-    height: 10px; }
+    width: 40px;
+    height: 40px; }
 
 .menu-sub {
   display: none; }
@@ -59,7 +59,8 @@ i {
     text-decoration: none;
     position: relative; }
   .menu-sub i {
-    top: 6px; }
+    background-size: 40% 40%;
+    top: -4px; }
 
 .help-con {
   background: #f3f3f3;

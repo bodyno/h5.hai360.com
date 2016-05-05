@@ -11,7 +11,7 @@ var config=require("./config/config");
 
 
 var app = express();
-var dir=app.get('env')=="production"?"dist":"dist";
+var dir=app.get('env')=="production"?"dist":"app";
 
 app.set('view engine', 'html');
 nunjucks.configure(__dirname + "/"+dir+"/views", {

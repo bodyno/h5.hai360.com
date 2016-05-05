@@ -1,8 +1,8 @@
 body {
   margin: 0 auto;
   background: #f3f3f3;
-  font-size: 12px;
   font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  font-size: 12px;
   line-height: 100%;
   max-width: 640px; }
 
@@ -29,8 +29,8 @@ ul, li {
 
 i {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   background: url("/static/images/help/arrow.png") no-repeat center;
   background-size: 50% 50%;
   width: 40px;
@@ -75,16 +75,6 @@ i {
     font-weight: normal;
     border-radius: 5px; }
   .help-con h3, .help-con h4 {
-    /*&:before{
-      content: '';
-      position: absolute;
-      background: url("/static/images/q.png") no-repeat center;
-      background-size: 50% 50%;
-      width:32px;
-      height:32px;
-      left: 8px;
-      top: 6px;
-    }*/
     background: #ffffff;
     position: relative;
     font-size: 16px;

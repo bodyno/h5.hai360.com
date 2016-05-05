@@ -2,7 +2,7 @@ module.exports = {
     options: {
         encoding: 'utf8',
         algorithm: 'md5',
-        length: 8,
+        length: 20,
         process:function(basename, name, extension){
             return name+"."+extension;
         }

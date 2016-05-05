@@ -1,7 +1,7 @@
 module.exports = {
 
     port: {
-        www: process.env.PORT || 8888,
+        www: 3001,
         liveReload: 35740
     },
 
@@ -18,7 +18,7 @@ module.exports = {
         dev: 'http://dev.cdn.yourdomain.com',
         beta: 'http://beta.cdn.yourdomain.com',
         prepare: 'http://cdn.yourdomain.com',
-        prod: 'http://cdn.yourdomain.com'
+        prod: 'http://static.hai360.com/h5'
     }
 
 };

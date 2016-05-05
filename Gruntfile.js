@@ -39,7 +39,22 @@ module.exports = function (grunt) {
 
     htmlclean: require('./config/grunt/htmlclean'),
 
-    browserSync: require('./config/grunt/browserSync')
+    browserSync: require('./config/grunt/browserSync'),
+
+    cdn: {
+      options: {
+        /** @required - root URL of your CDN (may contains sub-paths as shown below) */
+        cdn: 'http://static.hai360.com/h5/',
+        /** @optional  - if provided both absolute and relative paths will be converted */
+        flatten: true,
+        supportedTypes: { 'phtml': 'html' }
+      },
+      dist: {
+        cwd: '<%=yo.dist%>',
+        src: ['**/*.html','**/*.css'],
+        dest: '<%=yo.dist%>'
+      }
+    }
   };
 
   //加载grunt
@@ -58,7 +73,8 @@ module.exports = function (grunt) {
     'copy:html',
     'usemin',
     'htmlclean',
-    'concurrent:clean'
+    'concurrent:clean',
+    'cdn'
   ]);
 
   // 注册Grunt默认任务

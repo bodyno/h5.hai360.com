@@ -41,20 +41,8 @@ module.exports = function (grunt) {
 
     browserSync: require('./config/grunt/browserSync'),
 
-    cdn: {
-      options: {
-        /** @required - root URL of your CDN (may contains sub-paths as shown below) */
-        cdn: 'http://static.hai360.com/h5/',
-        /** @optional  - if provided both absolute and relative paths will be converted */
-        flatten: true,
-        supportedTypes: { 'phtml': 'html' }
-      },
-      dist: {
-        cwd: '<%=yo.dist%>',
-        src: ['**/*.html','**/*.css'],
-        dest: '<%=yo.dist%>'
-      }
-    }
+    cdn: require('./config/grunt/cdn')()
+
   };
 
   //加载grunt
@@ -73,7 +61,11 @@ module.exports = function (grunt) {
     'copy:html',
     'usemin',
     'htmlclean',
-    'concurrent:clean',
+    'concurrent:clean'
+  ]);
+
+  grunt.registerTask('build2', [
+    'build',
     'cdn'
   ]);
 

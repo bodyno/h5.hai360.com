@@ -1,7 +1,7 @@
 module.exports = {
 
     port: {
-        www: 3001,
+        www: 3002,
         liveReload: 35740
     },
 
@@ -18,7 +18,7 @@ module.exports = {
         dev: 'http://dev.cdn.yourdomain.com',
         beta: 'http://beta.cdn.yourdomain.com',
         prepare: 'http://cdn.yourdomain.com',
-        prod: 'http://static.hai360.com/h5'
+        prod: 'http://static.haibuy.com/h5'
     }
 
 };

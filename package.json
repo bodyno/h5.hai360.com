@@ -1,11 +1,11 @@
 {
-  "name": "h5.hai360.com",
+  "name": "h5.haibuy.com",
   "author": "Body",
   "version": "0.0.1",
   "scripts": {
     "start": "node app"
   },
-  "description": "A h5 page made by expressJs use for h5.hai360.com",
+  "description": "A h5 page made by expressJs use for h5.haibuy.com",
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "0.4.5",

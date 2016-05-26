@@ -1,7 +1,7 @@
 {
   "name": "h5.haibuy.com",
   "author": "Body",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "node app"
   },

@@ -41,7 +41,9 @@ module.exports = function (grunt) {
 
     browserSync: require('./config/grunt/browserSync'),
 
-    cdn: require('./config/grunt/cdn')()
+    cdn: require('./config/grunt/cdn')(),
+
+    'sftp-deploy': require('./config/grunt/ftp')
 
   };
 
@@ -49,7 +51,7 @@ module.exports = function (grunt) {
   grunt.initConfig(config);
 
   // 注册代码编译任务
-  grunt.registerTask('build', [
+  grunt.registerTask('build-local', [
     'clean:dist',
     'concurrent:copy',
     'useminPrepare',
@@ -64,9 +66,10 @@ module.exports = function (grunt) {
     'concurrent:clean'
   ]);
 
-  grunt.registerTask('build2', [
-    'build',
-    'cdn'
+  grunt.registerTask('build', [
+    'build-local',
+    'cdn',
+    'sftp-deploy'
   ]);
 
   // 注册Grunt默认任务

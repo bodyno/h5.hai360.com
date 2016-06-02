@@ -4,4 +4,8 @@ module.exports = function (app) {
     res.redirect("/help")
   });
 
+  app.get('/notice', function (req, res) {
+    res.render("notice/notice")
+  });
+
 };

@@ -23,6 +23,7 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-postcss": "^0.5.5",
     "grunt-spritesmith": "3.5.0",
+    "grunt-sftp-deploy": "^0.2.4",
     "grunt-usemin-nobody": "^1.0.1",
     "load-grunt-tasks": "^3.2.0",
     "time-grunt": "1.0.0"

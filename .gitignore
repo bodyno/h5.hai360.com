@@ -5,3 +5,4 @@ bower_components
 .sass-cache
 npm-debug.log
 dist
+*/static/styles/*.css

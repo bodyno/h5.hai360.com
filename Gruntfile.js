@@ -54,6 +54,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build-local', [
     'clean:dist',
     'concurrent:copy',
+    'sass',
     'useminPrepare',
     'postcss',
     'concat',

@@ -1,7 +1,6 @@
 module.exports = {
     copy: [
         'copy:js',
-        'copy:css',
         'copy:plugin',
         'copy:others',
         'copy:local',

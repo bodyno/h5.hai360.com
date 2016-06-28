@@ -13,6 +13,7 @@ var config=require("./config/config");
 var app = express();
 var dir=app.get('env')=="production"?"dist":"app";
 
+app.set('x-powered-by', false);
 app.set('view engine', 'html');
 nunjucks.configure(__dirname + "/"+dir+"/views", {
   autoescape: true,
